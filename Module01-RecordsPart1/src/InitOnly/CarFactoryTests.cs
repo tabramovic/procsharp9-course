@@ -48,3 +48,4 @@ namespace InitOnly
         int HorsePower { get; init; }
     }
 }
+
