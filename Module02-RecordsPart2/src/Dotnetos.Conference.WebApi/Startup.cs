@@ -20,7 +20,7 @@ namespace Dotnetos.Conference.WebApi
             services.AddLogging();
             services.AddControllers();
             services.AddSingleton<SpeakerRepository>();
-            services.AddSingleton<Mapper>();
+            //services.AddSingleton<Mapper>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

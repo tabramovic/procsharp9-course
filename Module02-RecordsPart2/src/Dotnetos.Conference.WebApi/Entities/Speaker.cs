@@ -1,18 +1,20 @@
 ﻿namespace Dotnetos.Conference.WebApi.Entities
 {
-    public class Speaker
-    {
-        public string FirstName { get; set; }
+    public record Speaker(string FirstName, string LastName, string Company);
 
-        public string LastName { get; set; }
+    //public record Speaker()
+    //{
+    //    public string FirstName { get; init; }
 
-        public string Company { get; set; }
+    //    public string LastName { get; init; }
 
-        public Speaker(string firstName, string lastName, string company)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Company = company;
-        }
-    }
+    //    public string Company { get; init; }
+
+    //    public Speaker(string firstName, string lastName, string company) : this()
+    //    {
+    //        FirstName = firstName;
+    //        LastName = lastName;
+    //        Company = company;
+    //    }
+    //}
 }
